@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src=" https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="dashboard">
+        <section class="navigation">
+            <img src="logo.jpg" alt="Logo" class="logo">
+
+            <div>
+                <span class="material-icons-outlined"> dashboard </span>
+                <span class="material-icons-outlined"> trending_up </span>
+                <span class="material-icons-outlined"> people_alt </span>
+                <span class="material-icons-outlined"> insert_invitation </span>
+                <span class="material-icons-outlined">settings_suggest</span>
+            </div>
+
+        </section>
+
+
+        <section class="main">
+
+            <div class="search">
+                <nav class="navbar navbar-light bg-light">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchProject">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </nav>
+            </div>
+
+            <div class="title">
+                <h1>Projects</h1>
+               
+                    <label for="projects">Sort by</label>
+                    <select name="projects" id="projectFilter">
+                        <option value="">...</option>
+                        <option value="recent">Recent</option>
+                        <option value="complete">Complete</option>
+                        <option value="ongoing">On Going</option>
+                    </select>
+               
+            </div>
+            <div class="project_list">
+                <div class="card project" data-status="complete" title="Complete Project" style="width: 18rem;">
+                    <div class="category category_color1"></div>
+                    <div class="card-body  project" >
+                        <h4 class="card-title">Machine Learning</h4>
+                        <h8 class="card-subtitle mb-2 text-muted" class="Active">Completed</h8>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <div class="meta">
+                        <div class="contibutors">
+                            <img src="contri.jpg" alt="">
+                            <img src="contri.jpg" alt="" class="stack">
+                            <img src="contri.jpg" alt="" class="stack">
+                        </div>
+                    </div>
+                </div>
+                <div class="card project" data-status="recent" title="Recent Project"  style="width: 18rem;">
+                    <div class="category category_color2"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">Project title</h4>
+                        <h8 class="card-subtitle mb-2 text-muted" class="Active">Active Recently</h8>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <div class="meta">
+                        <div class="contibutors">
+                            <img src="contri.jpg" alt="">
+                            <img src="contri.jpg" alt="" class="stack">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card  project" data-status="ongoing" title="Ongoing Project" style="width: 18rem;">
+                    <div class="category category_color3"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">Branding</h4>
+                        <h8 class="card-subtitle mb-2 text-muted" class="Active">On Going</h8>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <div class="meta">
+                        <div class="contibutors">
+                            <img src="contri.jpg" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card  project" data-status="recent" title="Recent Project" style="width: 18rem;">
+                    <div class="category"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">Project title</h4>
+                        <h8 class="card-subtitle mb-2 text-muted" class="Active">Active Recently</h8>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <div class="meta">
+                        <div class="contibutors">
+                            <img src="contri.jpg" alt="">
+                            <img src="contri.jpg" alt="" class="stack">
+                        </div>
+                    </div>
+                </div>
+                <div class="card  project" data-status="complete" title="Complete Project" style="width: 18rem;">
+                    <div class="category category_color1"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">Layouting</h4>
+                        <h8 class="card-subtitle mb-2 text-muted" class="Active">Completed</h8>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <div class="meta">
+                        <div class="contibutors">
+                            <img src="contri.jpg" alt="">
+                            <img src="contri.jpg" alt="" class="stack">
+                            <img src="contri.jpg" alt="" class="stack">
+                        </div>
+                    </div>
+                </div>
+                <div class="card  project" data-status="recent" title="Recent Project" style="width: 18rem;">
+                    <div class="category category_color2"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">Web Design</h4>
+                        <h8 class="card-subtitle mb-2 text-muted" class="Active">Active Recently</h8>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <div class="meta">
+                        <div class="contibutors">
+                            <img src="contri.jpg" alt="">
+                            <img src="contri.jpg" alt="" class="stack">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card  project" data-status="ongoing" title="Ongoing Project" style="width: 18rem;">
+                    <div class="category category_color3"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">Photoshoot</h4>
+                        <h8 class="card-subtitle mb-2 text-muted" class="Active">On Going</h8>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                    <div class="meta">
+                        <div class="contibutors">
+                            <img src="contri.jpg" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+
+
+    <section class="secondary"><!-- Secondary -->
+        <div class="chart">
+            <h2 class="p1">Total Project</h2>
+            <canvas id="myChart" width="400" height="400"></canvas>
+
+            <div class="complete">
+                <h3>2 Completed</h3>
+                <p>from 7 projects</p>
+            </div>
+        </div>
+
+        <div class="recent_project"><!-- Recent Project -->
+            <div class="listing">
+                <div class="title">
+                    <div class="categorys category_color1"></div>
+                    <h2 class="l1">Layouting</h2>
+                    <p>by Chidozie Kachukwu</p>
+                </div>
+                <span class="material-icons-outlined">more_vert</span>
+            </div>
+            <div class="listing">
+                <div class="title">
+                    <div class="categorys category_color2"></div>
+                    <h2 class="l1">Photoshoot</h2>
+                    <p>by Musa Ismail</p>
+                </div>
+                <span class="material-icons-outlined">more_vert</span>
+            </div>
+            <div class="listing">
+                <div class="title">
+                    <div class="categorys category_color3"></div>
+                    <h2 class="l1">Branding</h2>
+                    <p>by Ezekiel Arowolo</p>
+                </div>
+                <span class="material-icons-outlined">more_vert</span>
+            </div>
+            <div class="listing">
+                <div class="title">
+                    <div class="categorys category_color4"></div>
+                    <h2 class="l1">Graphics Design</h2>
+                    <p>by Matthew Kelechi</p>
+                </div>
+                <span class="material-icons-outlined">more_vert</span>
+            </div>
+        </div><!-- Recent Project End -->
+
+    </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

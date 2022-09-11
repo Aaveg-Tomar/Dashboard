@@ -1,0 +1,284 @@
+.material-icons-outlined {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    
+    -webkit-font-smoothing: antialiased;
+    
+    text-rendering: optimizeLegibility;
+  
+    
+    -moz-osx-font-smoothing: grayscale;
+  
+   
+    font-feature-settings: 'liga';
+  }
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    margin: 0px;
+    background-color:aliceblue;
+}
+.dashboard{
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    NAVIGATION
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.dashboard .navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 104%;
+    margin-top: 0px;
+    background-color: black;
+    margin-left: -15px;
+
+}
+
+.dashboard .navigation img.logo{
+   width: 50px;
+   height: 50px;
+   border-radius: 27px;
+}
+
+.dashboard .navigation .material-icons-outlined{
+   margin-left: 5px;
+   margin-right: 5px;
+   font-size: 30px;
+   color: #797e83;;
+   margin-top: 12px;
+
+ }
+
+ .dashboard .navigation div{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 30px;
+    color: #797e83;;
+  }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   MAIN
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Search */
+
+.dashboard .main .search  .navbar{
+    margin-top:50px;
+    position: relative;
+    justify-content: center;
+}
+
+
+
+
+/* MY PROJECT */
+.dashboard .main .title  form{
+    margin-top:40px;
+    
+}
+
+.dashboard .main .title label{
+    margin-right: 15px;
+    color: #727272;
+    font-size: 16px;
+}
+
+.dashboard .main .title from select{
+    border: none;
+    font-size: 16px;
+    background-color: white;
+}
+
+/* Project List */
+
+.meta
+{
+    margin-left: 10px;
+}
+ .meta img{
+    width: 40px;
+    height: 40px;
+    border-radius:40px ;
+    border: 2px solid white;
+}
+
+.meta img.stack{
+    margin-left: -20px;
+}
+
+.project_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+    border-radius: 57px;
+    margin-top: 30px;   
+}
+
+.card{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 14px;
+    border-radius: 10px;
+    transition: width 2s, height 2s, transform 2s;
+
+}
+
+.card:hover {
+    width: 310px;
+}
+
+.dashboard .main .project_list .category{
+    width: 20px;
+    height: 40px;
+    background-color: orangered;
+    position: absolute;
+    left: 0;
+    border-radius:0px 10px 10px 0px;
+}
+
+.category_color1{
+    background-color: tan !important;
+}
+.category_color2{
+    background-color: rebeccapurple !important;
+}
+.category_color3{
+    background-color: sandybrown !important;
+}
+.category_color4{
+    background-color: lightcyan !important;
+}
+
+
+.complete{
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.complete h3{
+    line-height: 0px;
+}
+
+.complete p{
+    color: #727272;
+}
+
+
+/* .listing h2{
+ line-height: 10px;
+}
+*/
+
+.listing p{
+    color: #727272;
+}
+ 
+.listing{
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent_project{
+    background-color: white;
+    padding: 15px 15px 15px 60px;
+}
+
+
+.chart{
+    background-color: white;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.dashboard .secondary .recent_project .categorys{
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    position: absolute;
+    left: 10px;
+    margin-top: 20px;
+}
+
+.l1{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.p1{
+    margin-left: 20px;
+    font-weight: bolder;
+}
+
+@media only screen and (min-width: 750px){
+    .dashboard .navigation{
+        width: 106%;
+    }
+
+}
+@media only screen and (min-width: 200px){
+    .dashboard .navigation{
+        width: 112%;
+    }
+
+}
+
+@media only screen and (min-width: 1024px){
+    .dashboard .navigation,
+    .dashboard .navigation div span,
+    section.secondary{
+        display: block;
+    }
+    .dashboard .navigation{
+        width: 60px;
+        position: fixed;
+        height: 100%;
+        margin-top: -50px;
+        
+    }
+    section.main{
+        width: 60%;
+        margin-left: 90px;
+        margin-right: 20px;
+    }
+    section.secondary{
+        width: 27%;
+        padding-top: 0px;
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        background-color: transparent;
+    }
+    section.secondary .chart,
+    section.secondary .recent_project{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .dashboard .navigation div{
+        margin-top: 19vh;
+        margin-bottom: 19vh;
+    }
+    .dashboard .navigation div span{
+        margin-top: 5vh;
+    }
+}
